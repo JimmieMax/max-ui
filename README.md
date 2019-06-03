@@ -1,29 +1,19 @@
 # max-ui
 
-## Project setup
+## Max UI install
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
+yarn install @jimmiemax/max-ui -S
 ```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+### Import into your project
+```js
+import Vue from 'vue';
+import MaxUI from '@jimmiemax/max-ui';
 
-### Run your tests
+Vue.use({
+    install(Vue) {
+        Vue.component('MText', MaxUI.MText)
+        Vue.component('MButton', MaxUI.MButton)
+    }
+})
 ```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
