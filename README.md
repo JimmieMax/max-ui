@@ -1,6 +1,6 @@
 # max-ui
 
-## Max UI install
+### Max UI install
 ```
 yarn install @jimmiemax/max-ui -S
 ```
