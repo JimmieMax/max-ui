@@ -2,7 +2,7 @@
 
 ### Max UI install
 ```
-yarn install @jimmiemax/max-ui -S
+yarn add @jimmiemax/max-ui -S
 ```
 
 ### Import into your project
