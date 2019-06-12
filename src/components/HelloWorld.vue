@@ -2,7 +2,7 @@
   <div class="hello">
     <m-text strong>Max UI</m-text>
     <m-button>default</m-button>
-    <m-button type="primary">disabled</m-button>
+    <m-button type="primary">primary</m-button>
     <m-button type="disabled">disabled</m-button>
   </div>
 </template>
