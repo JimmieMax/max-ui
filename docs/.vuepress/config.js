@@ -1,4 +1,38 @@
+const fs = require('fs')
+const path = require('path')
+
+const getComponents = (lang) => {
+    const officalComponents = fs
+        .readdirSync(path.resolve(__dirname, `../${lang}/components`))
+        .filter(fileName => {
+            return fileName !== 'README.md'
+        })
+        .map(fileName => {
+            if (fileName === 'README.md') {
+                return ''
+            } else {
+                return fileName + '/'
+            }
+        })
+
+    return [{
+            title: '组件',
+            collapsable: false,
+            children: [
+                ['', '介绍']
+            ]
+        },
+        {
+            title: '测练考',
+            collapsable: false,
+            children: officalComponents
+        }
+    ]
+}
+
 module.exports = {
+    // 基础路径
+    base: '/',
     title: 'Max UI',
     locales: {
         // 键名是该语言所属的子路径
@@ -14,7 +48,7 @@ module.exports = {
     },
     themeConfig: {
         // 假定 GitHub。也可以是一个完整的 GitLab 网址
-        repo: 'vuejs/vuepress',
+        repo: 'JimmieMax/max-ui',
         // 如果你的文档不在仓库的根部
         docsDir: 'docs',
         // 可选，默认为 master
