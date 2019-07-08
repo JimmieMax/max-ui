@@ -1,13 +1,21 @@
 {
   "name": "@jimmiemax/max-ui",
   "version": "0.1.2",
-  "main":"./dist/max-ui.common.js",
-  "files": ["dist/*","src/*","public/*","*.json","*.js"],
+  "main": "./dist/max-ui.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name max-ui ./src/components/index.js",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -22,7 +30,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "markdown-it-vuese": "^0.4.0",
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^1.0.1",
+    "vuepress-plugin-demo-block": "^0.7.2"
   },
   "eslintConfig": {
     "root": true,
@@ -46,5 +57,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "license": "ISC"
 }
