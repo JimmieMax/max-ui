@@ -175,7 +175,17 @@ module.exports = {
                 codepen: true, // 是否显示 codepen 链接
                 horizontal: false // 是否展示为横向样式
             }
-        }
+        },
+        // 注册插件
+        [
+            '@vuepress/register-components',
+            {
+                componentsDir: './docs/components',
+                getComponentName: file => {
+                    return file.replace(/\//g, '-')
+                }
+            }
+        ]
     ],
     markdown: {
         extendMarkdown: (md) => {
