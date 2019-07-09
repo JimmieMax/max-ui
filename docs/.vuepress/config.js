@@ -15,15 +15,9 @@ const getComponents = (lang) => {
             }
         })
 
-    return [{
-            title: '组件',
-            collapsable: false,
-            children: [
-                ['', '介绍']
-            ]
-        },
+    return [
         {
-            title: '测练考',
+            title: '组件',
             collapsable: false,
             children: officalComponents
         }
@@ -168,6 +162,8 @@ module.exports = {
         }],
     ],
     plugins: [
+        // 回到顶部
+        ['@vuepress/back-to-top', true],
         'vuepress-plugin-demo-block', {
             settings: {
                 vue: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js', // 在线示例中的vue依赖
@@ -176,16 +172,6 @@ module.exports = {
                 horizontal: false // 是否展示为横向样式
             }
         },
-        // 注册插件
-        [
-            '@vuepress/register-components',
-            {
-                componentsDir: './docs/components',
-                getComponentName: file => {
-                    return file.replace(/\//g, '-')
-                }
-            }
-        ]
     ],
     markdown: {
         extendMarkdown: (md) => {

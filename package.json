@@ -18,12 +18,10 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "less": "^3.9.0",
-    "less-loader": "^5.0.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
     "@vue/cli-plugin-babel": "^3.8.0",
     "@vue/cli-plugin-eslint": "^3.8.0",
     "@vue/cli-service": "^3.8.0",
@@ -33,7 +31,10 @@
     "markdown-it-vuese": "^0.4.0",
     "vue-template-compiler": "^2.6.10",
     "vuepress": "^1.0.1",
-    "vuepress-plugin-demo-block": "^0.7.2"
+    "vuepress-plugin-demo-block": "^0.7.2",
+    "core-js": "^2.6.5",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0"
   },
   "eslintConfig": {
     "root": true,
