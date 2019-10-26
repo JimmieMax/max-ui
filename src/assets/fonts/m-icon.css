@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "m-icon";
+  src: url('m-icon.eot?t=1572069139123'); /* IE9*/
+  src: url('m-icon.eot?t=1572069139123#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("m-icon.woff2?t=1572069139123") format("woff2"),
+  url("m-icon.woff?t=1572069139123") format("woff"),
+  url('m-icon.ttf?t=1572069139123') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('m-icon.svg?t=1572069139123#m-icon') format('svg'); /* iOS 4.1- */
+}
+
+[class^="m-icon-"], [class*=" m-icon-"] {
+  font-family: 'm-icon' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.m-icon-community:before { content: "\ea01"; }
+.m-icon-email:before { content: "\ea02"; }
+.m-icon-explore:before { content: "\ea03"; }
+.m-icon-max:before { content: "\ea04"; }
+.m-icon-navigation:before { content: "\ea05"; }
+.m-icon-recommend:before { content: "\ea06"; }
+.m-icon-shopping:before { content: "\ea07"; }
