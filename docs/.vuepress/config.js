@@ -28,6 +28,10 @@ module.exports = {
     // 基础路径
     base: '/',
     title: 'Max UI',
+    // 别名
+    alias: {
+      '@': process.cwd(),
+    },
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
@@ -93,6 +97,7 @@ module.exports = {
                         collapsable: false,
                         children: [
                             '/components/button',
+                            '/components/icon',
                             '/components/text'
                         ]
                     }
@@ -146,6 +151,7 @@ module.exports = {
                         collapsable: false,
                         children: [
                             '/zh/components/button',
+                            '/zh/components/icon',
                             '/zh/components/text'
                         ]
                     }
@@ -174,6 +180,8 @@ module.exports = {
         },
     ],
     markdown: {
+        // 显示行号
+        lineNumbers: true,
         extendMarkdown: (md) => {
             md.use(require('markdown-it-vuese'), {
                 vueseRe: /<\[vuese-h3\]\((.+)\)/i,

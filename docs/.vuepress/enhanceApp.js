@@ -4,9 +4,10 @@
 // import VueHighlightJS from 'vue-highlight';
 // import 'highlight.js/styles/atom-one-dark.css';
 // import VueECharts from 'vue-echarts' //注册图表
-import MaxUI from '../../src'
+import MaxUI from '@/src'
 
 // import './public/css/index.css' //组件css文件
+import '@/src/assets/fonts/m-icon.less'
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数

@@ -1,7 +1,9 @@
 # Text
 
 ### Demo
+
 ::: demo
+
 ```html
 <template>
   <div>
@@ -17,8 +19,8 @@ export default {
   data: () => ({})
 }
 </script>
-
 ```
+
 :::
 
 <[vuese-h3](./src/components/Text/Text.vue)

@@ -1,11 +1,13 @@
 # max-ui
 
 ### Max UI install
-```
+
+```shell
 yarn add @jimmiemax/max-ui -S
 ```
 
 ### Import into your project
+
 ```js
 import Vue from 'vue';
 import MaxUI from '@jimmiemax/max-ui';
