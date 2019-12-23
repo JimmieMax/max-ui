@@ -98,7 +98,8 @@ module.exports = {
                         children: [
                             '/components/button',
                             '/components/icon',
-                            '/components/text'
+                            '/components/text',
+                            '/components/svg',
                         ]
                     }
                 ]
@@ -166,6 +167,7 @@ module.exports = {
         ['script', {
             src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js'
         }],
+        ['link', { rel: 'icon', href: './favicon.ico' }]
     ],
     plugins: [
         // 回到顶部

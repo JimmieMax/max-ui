@@ -1,11 +1,13 @@
 import Button from './components/Button'
 import Text from './components/Text'
 import Icon from './components/Icon'
+import Svg from './components/Svg'
 
 const components = [
     Button,
     Text,
     Icon,
+    Svg,
 ]
 
 const install = function (Vue) {
