@@ -153,7 +153,8 @@ module.exports = {
                         children: [
                             '/zh/components/button',
                             '/zh/components/icon',
-                            '/zh/components/text'
+                            '/zh/components/text',
+                            '/zh/components/svg'
                         ]
                     }
                 ]
