@@ -71,7 +71,7 @@ module.exports = {
                         link: '/'
                     },
                     {
-                        text: 'Components',
+                        text: 'Start',
                         link: '/guide/install'
                     }
                 ],
@@ -83,23 +83,24 @@ module.exports = {
                         ]
                     },
                     {
-                        title: '开发指南',
+                        title: 'Guide',
                         collapsable: false,
                         children: [
-                            '/guide/install',
-                            '/guide/start',
-                            '/guide/styleguide',
-                            '/guide/versionguide'
+                            ['/guide/install', 'Install'],
+                            ['/guide/start', 'Start'],
+                            ['/guide/styleguide', 'Develop Standard'],
+                            ['/guide/versionguide', 'Version Standard']
                         ]
                     },
                     {
-                        title: '组件',
+                        title: 'Components',
                         collapsable: false,
                         children: [
                             '/components/button',
                             '/components/icon',
-                            '/components/text',
                             '/components/svg',
+                            '/components/text',
+                            // '/components/drag-box',
                         ]
                     }
                 ]
@@ -126,7 +127,7 @@ module.exports = {
                         link: '/zh/'
                     },
                     {
-                        text: '组件文档',
+                        text: '快速开始',
                         link: '/zh/guide/install'
                     }
                 ],
@@ -134,32 +135,34 @@ module.exports = {
                 sidebar: [{
                         collapsable: false,
                         children: [
-                            '/changelog'
+                            ['/changelog', '更新日志']
                         ]
                     },
                     {
                         title: '开发指南',
                         collapsable: false,
                         children: [
-                            '/zh/guide/install',
-                            '/zh/guide/start',
-                            '/zh/guide/styleguide',
-                            '/zh/guide/versionguide'
+                            ['/zh/guide/install', '安装'],
+                            ['/zh/guide/start', '快速上手'],
+                            ['/zh/guide/styleguide', '组件开发规范'],
+                            ['/zh/guide/versionguide', '版本管理规范']
                         ]
                     },
                     {
                         title: '组件',
                         collapsable: false,
                         children: [
-                            '/zh/components/button',
-                            '/zh/components/icon',
-                            '/zh/components/text',
-                            '/zh/components/svg'
+                            ['/zh/components/button', 'Button 按钮'],
+                            ['/zh/components/icon', 'Icon 图标'],
+                            ['/zh/components/svg', 'Svg 彩色图标'],
+                            ['/zh/components/text', 'Text 文本'],
+                            // ['/zh/components/drag-box', 'Drag Box 拖拽组件'],
                         ]
                     }
                 ]
             }
         },
+        lastUpdated: 'Last Updated', // string | boolean
     },
     head: [
         ['script', {

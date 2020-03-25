@@ -1,7 +1,10 @@
-# 安装
+# Install
 
-### NPM 安装 
-推荐使用 npm 来安装。
+### NPM Install 
 ```
 $ npm install @jimmiemax/max-ui --save
+```
+### yarn Install 
+```
+$ yarn add @jimmiemax/max-ui --S
 ```
