@@ -1,4 +1,4 @@
-# 组件开发规范
+# Style Guide
 
 
 ## eslint

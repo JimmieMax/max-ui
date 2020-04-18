@@ -1,8 +1,5 @@
 <template>
-  <i
-    class="m-icon"
-    :class="'m-icon-'+name"
-  >
+  <i :class="['m-icon',`m-icon-${name}`]">
   </i>
 </template>
 
@@ -10,17 +7,7 @@
 export default {
   name: "MIcon",
   props: {
-    svg: {
-      type: Boolean,
-      default: false
-    },
-    name: String,
+    name: String
   }
 };
 </script>
-
-
-<style lang="less">
-.m-icon {
-}
-</style>

@@ -1,4 +1,4 @@
-# 快速上手
+# Quick Start
 
 ## 引入 MaxUI
 
