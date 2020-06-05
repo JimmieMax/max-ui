@@ -100,7 +100,7 @@ module.exports = {
                             '/components/icon',
                             '/components/svg',
                             '/components/text',
-                            // '/components/drag-box',
+                            '/components/drag-box',
                         ]
                     }
                 ]

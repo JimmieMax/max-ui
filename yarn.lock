@@ -4957,6 +4957,11 @@ markdown-it@^8.4.1:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
+max-utils@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/max-utils/-/max-utils-1.0.4.tgz#eaedf5ac8c269f6191f22413167b10c81bd964e1"
+  integrity sha512-T0ERcCUwMTFZLRvbMX0ukLy+AiCtgTUtYT3rEcnyCMnPJ88Fh3ZaGzrZsTSMydQR4KBgr50zBar02geMN+hx6A==
+
 maxstache-stream@^1.0.0:
   version "1.0.4"
   resolved "https://registry.npm.taobao.org/maxstache-stream/download/maxstache-stream-1.0.4.tgz#9c7f5cab7e5fdd2d90da86143b4e9631ea328040"

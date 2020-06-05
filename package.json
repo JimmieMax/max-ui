@@ -10,15 +10,16 @@
     "*.js"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve ./example/main.js --open --mode local",
     "build": "vue-cli-service build",
-    "build-bundle": "vue-cli-service build --target lib --name max-ui ./src/components/index.js",
+    "build-bundle": "vue-cli-service build --target lib --name max-ui ./src/index.js",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "fonts:build": "node scripts/svgtofont.js"
   },
   "dependencies": {
+    "max-utils": "^1.0.4",
     "vue": "^2.6.10"
   },
   "devDependencies": {
