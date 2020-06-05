@@ -1,10 +1,6 @@
 {
   "name": "@jimmiemax/max-ui",
-<<<<<<< HEAD
-  "version": "0.1.3",
-=======
   "version": "0.1.4",
->>>>>>> 63075e6b83d0168bd69aa58d9695628b7b45551e
   "main": "./dist/max-ui.common.js",
   "files": [
     "dist/*",
