@@ -10,7 +10,7 @@
     "*.js"
   ],
   "scripts": {
-    "serve": "vue-cli-service serve ./example/main.js --open --mode local",
+    "serve:example": "vue-cli-service serve ./example/main.js --open --mode local",
     "build": "vue-cli-service build",
     "build-bundle": "vue-cli-service build --target lib --name max-ui ./src/index.js",
     "lint": "vue-cli-service lint",

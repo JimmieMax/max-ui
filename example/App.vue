@@ -4,22 +4,23 @@
     :ref="$options.name"
   >
     app
-    <drag-box /> 
+    <drag-box />
+    <img-lazy-load />
   </div>
 </template>
 
 <script>
-import DragBox from './components/drag-box';
+import DragBox from "./components/drag-box";
+import ImgLazyLoad from "./components/img-lazy-load";
 export default {
   name: "app",
   components: {
-      DragBox
+    DragBox,
+    ImgLazyLoad,
   },
   data() {
-    return {
-        
-    };
-  }
+    return {};
+  },
 };
 </script>
 
